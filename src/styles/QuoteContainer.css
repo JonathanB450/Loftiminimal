@@ -1,0 +1,46 @@
+.QuoteContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #22262F;
+    color: #fff;
+    width: 50%;
+    height: 450px;
+}
+
+.Content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+}
+
+.Line{
+    background-color: #fff;
+    width: 10%;
+    height: 1px;
+    margin: 2% 0 2% 0;
+}
+
+.Title{
+    font-family: 'Baskervville', serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+p{
+    font-family: 'Baskervville', serif;
+    font-size: 15px;
+}
+
+@media(max-width: 700px){
+    .Title{
+        font-size: 20px;
+    }
+    p{
+        font-size: 13px;
+    }
+}

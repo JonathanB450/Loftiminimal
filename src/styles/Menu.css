@@ -1,0 +1,84 @@
+#Menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5%;
+    width: 99%;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+}
+
+#LogoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+
+#LogoContainer img{
+    width: 45%;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+
+.Item{
+    margin: 0 4% 0 4%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 60%;
+    letter-spacing: 3px;
+    transition: 0.3s ease;
+}
+
+.Item:hover{
+    transition: 0.3s ease;
+    border-bottom: 1px solid #fff;
+}
+
+
+#InstagramLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 6% 0 5%;
+    transition: 0.3s ease;
+}
+
+#InstagramLogo:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+#InstagramLogo img{
+    width: 60%;
+}
+
+@media(max-width: 700px){
+    #Menu{
+        flex-direction: column;
+        height: 90px;
+    }
+    #LogoContainer img{
+        width: 100%;
+        margin: 2% 0 2% 0;
+    }
+    nav{
+        justify-content: center;
+    }
+    .Item{
+        font-size: 40%;
+    }
+    #InstagramLogo img{
+        width: 50%;
+    }
+}
